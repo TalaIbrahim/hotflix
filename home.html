@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/homeStyle.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body>    
+        <div class="header">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header-left">
+                        <div class="header-logo">
+                            <img src="assets/logo.svg">
+                        </div>
+                        <div class="mobile-header">
+                            <div class="search-mobile">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                    
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <g id="SVGRepo_iconCarrier"> <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                    
+                                    </svg>
+                            </div>
+                            <div class="lang">EN</div>
+                            <div class="export">
+                                <svg fill="#ffffff" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                    
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <g id="SVGRepo_iconCarrier">
+                                    
+                                    <path d="M8.71,7.71,11,5.41V15a1,1,0,0,0,2,0V5.41l2.29,2.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42l-4-4a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-4,4A1,1,0,1,0,8.71,7.71ZM21,14a1,1,0,0,0-1,1v4a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V15a1,1,0,0,0-2,0v4a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V15A1,1,0,0,0,21,14Z"/>
+                                    
+                                    </g>
+                                    
+                                    </svg>
+                            </div>
+                            <div class="menu">
+                                <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                    
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <g id="SVGRepo_iconCarrier"> <path fill="#ffffff" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/> </g>
+                                    
+                                    </svg>
+                            </div>
+
+                        </div>
+                        <div class="navigator">
+                            <div class="home">Home</div>
+                            <div class="catalog">Catalog</div>
+                            <div class="pricing">Pricing</div>
+                            <div class="help">Help</div>
+                            <div class="other">...</div>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class ="search">
+                            <input id="search" placeholder="search ...">
+                        </div>
+                        <div class="language">
+                            En
+                        </div>
+                        <div class="sign-in">
+                            <button>Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+        </div>
+        <!-- <div class="new-season">  
+            <div class="container">
+                <div class="NewSeason">
+                    <div class="season-header">
+                        <div class="title">
+                            <b>NEW ITEMS</b> OF THIS SEASON
+                        </div>
+                        <div class="season-arrows">
+
+                            <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+                            <g id="SVGRepo_iconCarrier"> <g> <g id="move_x5F_horizontal"> <g> <polygon style="fill:fff;" points="12,18 6,18 6,22 0,16 6,10 6,14 12,14 "/> <polygon style="fill:fff;" points="20,14 26,14 26,10 32,16 26,22 26,18 20,18 "/> </g> </g> </g> </g>
+
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="movie-cards slick-carousel">
+                        <div>item 1</div>
+                        <div>item 2</div>
+                        <div>item 3</div>
+                        <div>item 4</div>
+                        <div>item 1</div>
+                        <div>item 1</div>
+                        <div>item 1</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        <div class="items">
+           <div class="container">
+               <div class="row-flex">
+                    <div class="title">New Items</div>
+                    <div class="tabs">
+                        <div class="new-release selected">New Releases</div>
+                        <div class="movies">Movies</div>
+                        <div class="series">TV Series</div>
+                        <div class="cartoons">Cartoons</div>
+                    </div>
+                    <div class="mobile-tabs-container">
+                        <div class="selected-tab">New Release</div>
+                        <div class="tabs-menu">
+                            <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <g id="SVGRepo_iconCarrier"> <path fill="#ffffff" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/> </g>
+                                
+                                </svg>
+                        </div>
+                        <div class="mobile-tabs">
+                            <div class="new-release selected">New Releases</div>
+                            <div class="movies">Movies</div>
+                            <div class="series">TV Series</div>
+                            <div class="cartoons">Cartoons</div>
+                        </div>
+                    </div>
+                    <div class="items-movies">
+                        
+                    </div>
+                </div>     
+           </div> 
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <img src="assets/logo.svg">
+                        </div>
+                        <div class="copy-right">
+                            @2020 HotFlix 
+                            <br>
+                            Create by Dimtry Volkvok
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-navigator">
+                            <div class="about-us">About Us</div>
+                            <div class="contacts">Contacts</div>
+                            <div class="privacy-policy">Privacy Policy</div>
+                            <div class="up">↑</div>
+                        </div>
+
+                    </div>
+                    <div class="mobile-footer">
+                        <div class="mobile-copy-right">
+                            @2020 HotFlix 
+                            <br>
+                            Create by Dimtry Volkvok
+                        </div>
+                        <div class="mobile-up">↑</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <script src="code/homeCode.js"></script>    
+    </body>
+    
+</html>

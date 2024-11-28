@@ -1,0 +1,262 @@
+body, html  {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.new-season {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.95) 
+        ),
+        url('/assets/home__bg.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    color: white;
+}
+
+.movie-cards {
+    margin-top: 20px;
+}
+
+.row-movies {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.movie-card {
+    position: relative;
+}
+
+.movie-rating {
+    background-color: rgba(54, 37, 82, 0.56);
+    border-radius: 50px;
+    border: 1.5px solid green;
+    left: 20%;
+    padding: 5px;
+    position: absolute;
+    top: 8%;
+    transform: translate(-50%, -50%);
+}
+
+.bad-rating {
+    border-color: red;
+}
+
+.movie-image {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.movie-title {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.movie-genre {
+    color:#ffd80e;
+    font-size: 10px;
+}
+
+.season-arrows,.season-arrows svg {
+    height: 20px;
+}
+
+.season-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.movie-id {
+    display: none;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px ;  
+    padding-top: 30px;
+    width: max-content;
+}
+
+.items {
+    background-color: rgba(26, 25, 31, 0.999);
+    color: #c1c0c0;
+}
+
+.NewSeason {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tabs, .mobile-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.tabs div, .movie-card {
+    cursor: pointer;
+}
+
+.row-flex, .items-movies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.selected {
+    color: #ffd80e;
+    text-decoration: underline;
+}
+
+.mobile-tabs-container {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 920px) {
+    .container, .header-container, .footer-container  {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .header-container {
+        align-items: center;     
+    }
+
+    .footer-container, .footer-right {
+        align-items: baseline;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .row-movies {
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .title b::after {
+        content: "\A";
+    }
+
+    .up, .copy-right {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .mobile-tabs-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobile-tabs {
+        background-color: rgba(26, 25, 31, 0.999);
+        display: none;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .mobile-tabs div{
+        border-bottom: 1px solid gray;
+    }
+
+    .display {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px)  {
+    .container, .header-container, .footer-container  {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .header-container {
+        align-items: center;     
+    }
+
+    .footer-container, .footer-right {
+        align-items: baseline;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .new-season {
+        background-color: rgba(26, 25, 31, 0.999);
+        background-image: none;
+    }
+
+    .title b::after {
+        content: "\A";
+    }
+
+    .up, .copy-right {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .mobile-tabs-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobile-tabs {
+        background-color: rgba(26, 25, 31, 0.999);
+        display: none;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .mobile-tabs div{
+        border-bottom: 1px solid gray;
+    }
+
+    .row-movies {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .display {
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

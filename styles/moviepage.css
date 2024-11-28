@@ -1,0 +1,172 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.movie-deatils {
+    background-color: rgba(11, 9, 24, 0.897);
+    padding: 10px;
+}
+
+body {
+    color: white;
+}
+
+.movie-title {
+    font-size: 30px;
+    font-weight: bold;
+   text-align: center;
+}
+
+.movie-time {
+    color: gray;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.movie-date div {
+    color: gray;
+}
+
+.trailer {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.trailer-icon {
+    background-color: rgb(240, 205, 7);
+    border-radius: 50px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.movie-genres {
+    border-radius: 5px;
+    border: 1px solid rgb(240, 205, 7);
+    padding: 5px;
+}
+
+.poster {
+    position: relative;
+}
+
+.poster-img {
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+.description {
+    color: gray;
+    margin: 0px 100px ;
+    text-align: center;
+}
+
+.cast {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+  
+.directors,
+.stars,
+.more {
+    justify-content: center;
+    text-align: center;
+}
+
+.director-names, .star-names {
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dir-name, .star-name {
+    padding-top: 10px;
+}
+
+.movie-card {
+    position: relative;
+}
+
+.movie-image {
+    cursor: pointer;
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.similar {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 10px;
+}
+
+.play {
+    position: absolute;
+    top: 80%;
+    left: 65%;
+}
+
+.play-button {
+    background-color: rgb(240, 205, 7);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.play-text {
+    padding-top: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 920px)  {
+      .similar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+  
+@media only screen and (max-width: 480px)  {
+    .poster-img img {
+       width: 100%;
+      }
+
+      .similar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+      
+     
+      
+      
+
+
+
+
